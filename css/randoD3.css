@@ -1,0 +1,230 @@
+:root {
+    --color-header-bkgnd: #612525;
+    --color-header-fgnd: var(--color-primary-background);
+    
+    --color-inlay-fret: #656161;
+
+    --color-root:    #e74c3c;
+    --color-second:  #e67e22;
+    --color-third:   #f9e79f;
+    --color-fourth:  #2dd413;
+    --color-fifth:   #0aadab;
+    --color-sixth:   #ad6cc8;
+    --color-seventh: #f5b7b1;
+    --color-eighth:  #658de9;
+    --color-ninth:   #e59866;
+}
+
+.header {
+    background: var(--color-header-bkgnd);
+    color: var(--color-header-fgnd);
+    
+}
+
+h2 {
+    color: var(--color-header-bkgnd);
+}
+
+.playable > p{
+    display:inline-flex;
+    margin: 0;
+}
+.playable > button {
+    display:inline-flex;
+    margin: .4em 0 .4em .7em;
+}
+
+.note-cell{
+    height: 1.2em;
+    width: 2em;
+}
+
+.note-cell > p{
+    height: 1.2em;
+    line-height: normal;
+}
+
+.document p{
+    width: 2em;
+    margin: 0;
+
+}
+.frets .document > p{
+    width: 1em;
+    margin: 0;
+    background: 
+}
+
+.frets .note-cell > p{
+    width: 2em;
+    margin: 0;
+}
+
+.hnote{
+    height: 1.2em;
+}
+.note{
+    border-radius: 1em;
+    transition: background .05s;
+}
+
+.document {
+    border: 1px solid black;
+}
+
+td.document {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+td.document.fret0{
+    border-top: 1px solid black;
+}
+
+td.document.fret15{
+    border-bottom: 1px solid black;
+}
+
+.document > td{
+    border:0;
+}
+
+.highlight-note-A p.A,
+.highlight-note-Asharp p.Asharp,
+.highlight-note-B p.B,
+.highlight-note-C p.C,
+.highlight-note-Csharp p.Csharp,
+.highlight-note-D p.D,
+.highlight-note-Dsharp p.Dsharp,
+.highlight-note-E p.E,
+.highlight-note-F p.F,
+.highlight-note-Fsharp p.Fsharp,
+.highlight-note-G p.G,
+.highlight-note-Gsharp p.Gsharp{
+    background: white;
+}
+
+.highlighted-note{
+    border: 1px solid black;
+}
+
+.root{
+    background: var(--color-root);
+}
+
+.second{
+    background: var(--color-second);
+}
+
+.third{
+    background: var(--color-third);
+}
+
+.fourth{
+    background: var(--color-fourth);
+}
+
+.fifth{
+    background: var(--color-fifth);
+}
+
+.sixth{
+    background: var(--color-sixth);
+}
+
+.seventh{
+    background: var(--color-seventh);
+}
+
+.eighth{
+    background: var(--color-eighth);
+}
+.ninth{
+    background: var(--color-ninth);
+}
+
+.topContainer {
+    margin: 1.5em;
+}
+
+caption{
+    border-radius: .5em .5em 0 0;
+    border: 1px solid black;
+    border-bottom: 0;
+    padding: .5em;}
+
+.chord .fret0.note-cell {
+    border-bottom: 3px solid black;
+}
+
+.scale .fret0 {
+    border-right: 3px solid black;
+}
+
+section details {
+    margin: .5em 0;
+}
+
+.fret3.note-cell,
+.fret5.note-cell,
+.fret7.note-cell,
+.fret9.note-cell,
+.fret12.note-cell,
+.fret15.note-cell{
+    background-color: var(--color-inlay-fret);
+}
+
+.scale{
+    width: 3em;
+}
+
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+.control{
+    margin-right: 3em;
+}
+
+.chord-container{
+    flex: 1;
+    margin-bottom: 1em;
+}
+.chords-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.chord-container{
+    flex: 1;
+}
+
+
+.chord{
+    width: 3em;
+    margin-right: 1em;
+}
+
+td.key{
+    min-width: 1em;
+}
+
+tr.sharp td.key{
+    border-bottom: none;
+}
+tr.natural td.key{
+    border-top: none;
+}
+
+tr.sharp {
+    min-height: 2em;
+}
+
+tr.sharp td.note-cell{
+    background: black;
+}
+
+

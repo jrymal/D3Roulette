@@ -1,2 +1,2 @@
-# D3Roulette
-For when you want to play but the only decisions is to not have to make decisions.
+# Rando D3
+A tool to make a D3 character and run but make no decisions and leave it all to chance....
