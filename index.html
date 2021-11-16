@@ -37,10 +37,10 @@
         <script type="text/javascript" src="js/classes/witch_doctor.js"> </script>
         <script type="text/javascript" src="js/classes/wizard.js"> </script>
         <script type="text/javascript" src="js/classes/necromancer.js"> </script>
-        <script type="text/javascript" src="js/RandoD3.js"> </script>
+        <script type="text/javascript" src="js/D3Roulette.js"> </script>
 
         <link rel="stylesheet" type="text/css" href="css/core.css" media="all" async/>
-        <link rel="stylesheet" type="text/css" href="css/randoD3.css" media="all" async/>
+        <link rel="stylesheet" type="text/css" href="css/D3Roulette.css" media="all" async/>
 
     </head>
     <body onload="init()">
@@ -147,7 +147,7 @@
             "use strict";
             if('serviceWorker' in navigator) {
                 navigator.serviceWorker
-                    .register('randoD3-serviceworker.js')
+                    .register('D3Roulette-serviceworker.js')
                     .then(function() { console.debug("Service Worker Registered"); })
                     .catch(function(error) {console.warn('Registration failed with ' + error);});
             }

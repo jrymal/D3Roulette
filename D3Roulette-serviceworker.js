@@ -11,10 +11,10 @@ self.addEventListener('install', function(event) {
                 // TODO : update me once complete
                 'index.html',
                 'manifest.json',
-                'fretboardlogic-serviceworker.js',
+                'D3Roulette-serviceworker.js',
                 
                 'css/core.css',
-                'css/fretboardlogic.css',
+                'css/D3Roulette.css',
                 
                 'images/icons-70.png',
                 'images/icons-80.png',
@@ -23,12 +23,15 @@ self.addEventListener('install', function(event) {
                 'images/icons-310x150.png',
                 'images/icons-512.png',
                 
-                'js/FretBoardGenerator.js',
-                'js/KeyBoardGenerator.js',
-                'js/FretBoardLogic.js',
-                'js/MusicTheory.js',
-                'js/MidiNotes.js',
+                'js/D3Roulette.js',
                 'js/Util.js',
+                'js/classes/barbarian.js',
+                'js/classes/crusader.js',
+                'js/classes/demon_hunter.js',
+                'js/classes/monk.js',
+                'js/classes/necromancer.js',
+                'js/classes/witch_doctor.js',
+                'js/classes/wizard.js',
             ]);
         })
     );
