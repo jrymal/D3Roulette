@@ -165,9 +165,8 @@ const RANDO_D3_APP = {
     setPassiveSkill : function(ele_tr, title, skill){
         removeAllChildren(ele_tr);
         if (skill !== undefined){
-            // TODO : need an index
-            var row = 1;
-            var column = 1;
+            var row = (skill.idx) % 4 + 1;
+            var column = Math.floor((skill.idx / 4) + 1);
 
             ele_tr.innerHTML = 
             `<td>${skill.name}</td>

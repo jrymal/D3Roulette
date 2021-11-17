@@ -113,5 +113,12 @@ function chooseSetFromList(list_of_items, int_count){
         idx_list.push(choice);
     }
 
-    return idx_list.sort().map(idx => list_of_items[idx]);
+    return idx_list.sort().map(idx => {
+        return {
+            name: list_of_items[idx].name,
+            idx: idx,
+            level: list_of_items[idx].level
+        };
+
+    });
 }
