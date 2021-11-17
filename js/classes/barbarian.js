@@ -354,33 +354,105 @@ const barbarian = {
         "skills":[
             {
                 "name":"Overpower",
-                "level":1,
+                "level":9,
                 "runes":[
                     {
+                        "name":"Storm of Steel",
+                        "level":15
+                    },
+                    {
+                        "name":"Killing Spree",
+                        "level":23
+                    },
+                    {
+                        "name":"Crushing Advance",
+                        "level":32
+                    },
+                    {
+                        "name":"Momentum",
+                        "level":39
+                    },
+                    {
+                        "name":"Revel",
+                        "level":49
                     }
                 ],
             },
             {
                 "name":"Revenge",
-                "level":1,
+                "level":13,
                 "runes":[
                     {
+                        "name":"Blood Law",
+                        "level":19
+                    },
+                    {
+                        "name":"Best Served Cold",
+                        "level":25
+                    },
+                    {
+                        "name":"Retribution",
+                        "level":36
+                    },
+                    {
+                        "name":"Grudge",
+                        "level":41
+                    },
+                    {
+                        "name":"Provocation",
+                        "level":52
                     }
                 ],
             },
             {
                 "name":"Furious Charge",
-                "level":1,
+                "level":21,
                 "runes":[
                     {
+                        "name":"Battering Ram",
+                        "level":27
+                    },
+                    {
+                        "name":"Merciless Assault",
+                        "level":33
+                    },
+                    {
+                        "name":"Stamina",
+                        "level":38
+                    },
+                    {
+                        "name":"Cold Rush",
+                        "level":47
+                    },
+                    {
+                        "name":"Dreadnought",
+                        "level":56
                     }
                 ],
             },
             {
                 "name":"Avalanche",
-                "level":1,
+                "level":61,
                 "runes":[
                     {
+                        "name":"Volcano",
+                        "level":62
+                    },
+                    {
+                        "name":"Lahar",
+                        "level":63
+                    },
+                    {
+                        "name":"Snow-Capped Mountain",
+                        "level":65
+                    },
+                    {
+                        "name":"Tectonic Rift",
+                        "level":67
+                    },
+                    {
+                        "name":"Glacier",
+                        "level":69
                     }
                 ],
             },
@@ -391,25 +463,79 @@ const barbarian = {
         "skills":[
             {
                 "name":"Threatening Shout",
-                "level":1,
+                "level":14,
                 "runes":[
                     {
+                        "name":"Intimidate",
+                        "level":23
+                    },
+                    {
+                        "name":"Falter",
+                        "level":28
+                    },
+                    {
+                        "name":"Grim Harvest",
+                        "level":37
+                    },
+                    {
+                        "name":"Demoralize",
+                        "level":43
+                    },
+                    {
+                        "name":"Terrify",
+                        "level":57
                     }
                 ],
             },
             {
                 "name":"Battle Rage",
-                "level":1,
+                "level":22,
                 "runes":[
                     {
+                        "name":"Marauder's Rage",
+                        "level":26
+                    },
+                    {
+                        "name":"Ferocity",
+                        "level":31
+                    },
+                    {
+                        "name":"Swords to Ploughshares",
+                        "level":38
+                    },
+                    {
+                        "name":"Into the Fray",
+                        "level":46
+                    },
+                    {
+                        "name":"Bloodshed",
+                        "level":54
                     }
                 ],
             },
             {
                 "name":"War Cry",
-                "level":1,
+                "level":28,
                 "runes":[
                     {
+                        "name":"Hardened Wrath",
+                        "level":32
+                    },
+                    {
+                        "name":"Charge!",
+                        "level":35
+                    },
+                    {
+                        "name":"Invigorate",
+                        "level":41
+                    },
+                    {
+                        "name":"Veteran's Warning",
+                        "level":49
+                    },
+                    {
+                        "name":"Impunity",
+                        "level":60
                     }
                 ],
             },
@@ -420,25 +546,79 @@ const barbarian = {
         "skills":[
             {
                 "name":"Earthquake",
-                "level":1,
+                "level":19,
                 "runes":[
                     {
+                        "name":"Giant's Stride",
+                        "level":24
+                    },
+                    {
+                        "name":"Chilling Earth!",
+                        "level":29
+                    },
+                    {
+                        "name":"The Mountain's Call",
+                        "level":39
+                    },
+                    {
+                        "name":"Molten Fury",
+                        "level":50
+                    },
+                    {
+                        "name":"Cave-In",
+                        "level":56
                     }
                 ],
             },
             {
                 "name":"Call of the Ancients",
-                "level":1,
+                "level":25,
                 "runes":[
                     {
+                        "name":"The Council Rises",
+                        "level":31
+                    },
+                    {
+                        "name":"Duty to the Clan",
+                        "level":37
+                    },
+                    {
+                        "name":"Ancients' Blessing",
+                        "level":45
+                    },
+                    {
+                        "name":"Ancients' Fury",
+                        "level":51
+                    },
+                    {
+                        "name":"Together as One",
+                        "level":58
                     }
                 ],
             },
             {
                 "name":"Wrath of the Berserker",
-                "level":1,
+                "level":30,
                 "runes":[
                     {
+                        "name":"Arreat's Wail",
+                        "level":36
+                    },
+                    {
+                        "name":"Insanity",
+                        "level":40
+                    },
+                    {
+                        "name":"Slaughter",
+                        "level":46
+                    },
+                    {
+                        "name":"Striding Giant",
+                        "level":52
+                    },
+                    {
+                        "name":"Thrive on Chaos",
+                        "level":60
                     }
                 ],
             },
