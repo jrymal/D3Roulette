@@ -98,28 +98,43 @@ const RANDO_D3_APP = {
         self.setActiveSkill($("skill-primary"),"Primary", skill, rune);
         
         //secondary
-        var skill = chooseFromList(listFromLevel(class_choice.secondary, int_level));
-        var rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        skill = chooseFromList(listFromLevel(class_choice.secondary, int_level));
+        rune = undefined;
+        if (skill != undefined){
+            rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        }
         self.setActiveSkill($("skill-secondary"),"Secondary", skill, rune);
         
         //one
-        var skill = chooseFromList(listFromLevel(class_choice.one.skills, int_level));
-        var rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        skill = chooseFromList(listFromLevel(class_choice.one.skills, int_level));
+        rune = undefined;
+        if (skill != undefined){
+            rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        }
         self.setActiveSkill($("skill-one"),class_choice.one.name, skill, rune);
         
         //two
-        var skill = chooseFromList(listFromLevel(class_choice.two.skills, int_level));
-        var rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        skill = chooseFromList(listFromLevel(class_choice.two.skills, int_level));
+        rune = undefined;
+        if (skill != undefined){
+            rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        }
         self.setActiveSkill($("skill-two"),class_choice.two.name, skill, rune);
         
         //three
-        var skill = chooseFromList(listFromLevel(class_choice.three.skills, int_level));
-        var rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        skill = chooseFromList(listFromLevel(class_choice.three.skills, int_level));
+        rune = undefined;
+        if (skill != undefined){
+            rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        }
         self.setActiveSkill($("skill-three"),class_choice.three.name, skill, rune);
-        
+
         //four
-        var skill = chooseFromList(listFromLevel(class_choice.four.skills, int_level));
-        var rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        skill = chooseFromList(listFromLevel(class_choice.four.skills, int_level));
+        rune = undefined;
+        if (skill != undefined){
+            rune = chooseFromList(listFromLevel(skill.runes, int_level), true);
+        }
         self.setActiveSkill($("skill-four"),class_choice.four.name, skill, rune);
         
         //Passive
@@ -139,12 +154,11 @@ const RANDO_D3_APP = {
     setActiveSkill : function(ele_tr, title, skill, rune){
         removeAllChildren(ele_tr);
         if (skill !== undefined){
-        
+            var rune_name = rune == undefined ? "none" : rune.name;
             ele_tr.innerHTML = 
             `<td>${title}</td>
              <td>${skill.name}</td>
-             <td></td>`;
-             //<td>${rune.name}</td>`;
+             <td>${rune_name}</td>`;
         }
     },
     
