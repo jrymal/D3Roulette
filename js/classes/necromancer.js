@@ -358,7 +358,7 @@ const necromancer= {
                 "runes":[
                     {
                         "name":"Frozen Lands",
-                        "level"43
+                        "level":43
                     },
                     {
                         "name":"Plaguelands",
@@ -389,7 +389,7 @@ const necromancer= {
                 "runes":[
                     {
                         "name":"Dizzying CurseLands",
-                        "level"21
+                        "level":21
                     },
                     {
                         "name":"Enfeeblement",
@@ -415,7 +415,7 @@ const necromancer= {
                 "runes":[
                     {
                         "name":"Transmittable",
-                        "level"23
+                        "level":23
                     },
                     {
                         "name":"Osmosis",
@@ -441,7 +441,7 @@ const necromancer= {
                 "runes":[
                     {
                         "name":"Scent of Blood",
-                        "level"26
+                        "level":26
                     },
                     {
                         "name":"Volatile Death",
