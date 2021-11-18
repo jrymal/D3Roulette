@@ -14,9 +14,11 @@ ALL_CLASSES.push(necromancer);
 
 const RANDO_D3_APP = {
     init: function(){
+        this.name_gen = Object.create(NAME_GENERATOR).init();
+        
         this.setState(history.state);
         this.addUiListeners();
-        
+
         return this;
     },
 
@@ -61,7 +63,7 @@ const RANDO_D3_APP = {
         randomizeList("character_model");
 
         // generate a name
-        $("character_name").value = self.generateName(class_name, getSelectedValue($("character_model")));
+        $("character_name").value = self.generateName(class_choice.name_dict, getSelectedValue($("character_model")));
 
         // set level to 1
         $("character_level").value = 1;
@@ -192,9 +194,9 @@ const RANDO_D3_APP = {
         return 0;
     },
 
-    generateName: function(str_class_name, str_class_model){
-        // TODO : generate real names
-        return "frank";
+    generateName: function(dict_class_words, str_class_model){
+        var self = this;
+        return self.name_gen.generate(dict_class_words, str_class_model);
     },
 
     installApp: function(){

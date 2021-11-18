@@ -7,7 +7,7 @@
         <meta name="description" content="Run Diablo 3 without thinking...maybe with terrible results...."/>
         <meta name="author" content="jrymal"/>
 
-        <title>Rando D3</title>
+        <title>D3Roulette</title>
 
         <link rel="manifest" href="manifest.json">
 
@@ -29,6 +29,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/> <!-- or black -->
 
         <script type="text/javascript" src="js/Util.js"> </script>
+        <script type="text/javascript" src="js/NameGenerator.js"> </script>
         <!-- Load Class Data -->
         <script type="text/javascript" src="js/classes/barbarian.js"> </script>
         <script type="text/javascript" src="js/classes/crusader.js"> </script>
@@ -45,7 +46,7 @@
     </head>
     <body onload="init()">
         <section class="header">
-            <h1>Rando D3</h1>
+            <h1>D3 Roulette</h1>
         </section>
         
         <section class="tools">
@@ -60,17 +61,22 @@
             <section class="info">
                 <details>
                     <summary>How to use</summary>
-                    <p>RandoD3 is a tool to decide the skills of your D3 character. It uses no "smart" calculations, just a generic randomization. But you don't need to make hard decisions. So there's that....</p>
+                    <p>D3 Roulette is a tool to decide the skills of your D3 character. It uses no "smart" calculations, just a generic randomization. But you don't need to make hard decisions. So there's that....</p>
                 </details>
             </section>
             <section class="controls">
                 <div class="control">
-                    <input type="checkbox" id="expansion_reaper" name="expansion_reaper" class="tagAlong" checked>
-                    <label for="expansion_reaper">Reaper of Souls</label>
-                    
-                    <input type="checkbox" id="expansion_rise" name="expansion_rise" class="tagAlong" checked>
-                    <label for="expansion_rise">Rise of the Necromancer</label>
-                    
+                    <fieldset>
+                        <legend>Expansions</legend>
+                        <div>
+                        <input type="checkbox" id="expansion_reaper" name="expansion_reaper" class="tagAlong" checked>
+                        <label for="expansion_reaper" class="tagAlong">Reaper of Souls</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="expansion_rise" name="expansion_rise"  class="tagAlong" checked>
+                        <label for="expansion_rise" class="tagAlong">Rise of the Necromancer</label>
+                        </div>
+                    </fieldset>
                     <button id="randomize_create" aria-label="Randomize the character creation details">Create Random Character</button>
                     
                     <label for="character_class">Character Class</label>
