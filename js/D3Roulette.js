@@ -151,6 +151,8 @@ const RANDO_D3_APP = {
                 ele_tr.hidden = true;
             }
         }
+
+        self.saveState();
     },
 
     setActiveSkill : function(ele_tr, title, skill, rune){
@@ -221,11 +223,33 @@ const RANDO_D3_APP = {
     },
 
     getState: function() {
-        // TODO : build a JSON object to stash the config variables in
+        return {
+            "name": $("character_name").value,
+            "class": getSelectedValue($("character_class")),
+            "model": getSelectedValue($("character_model")),
+            "level": $("character_level").value,
+            "expansions":{
+                "reaper": $("expansion_reaper").checked,
+                "rise": $("expansion_rise").checked,
+            },
+            "active_skills":{
+            },
+            "passive_skills":{
+            }
+
+        };
     },
 
-    setState: function() {
-        // TODO : load the data from getStash back into the UI
+    setState: function(state) {
+        if (state){
+            $("character_name").value = state.name;
+            setSelectedValue($("character_class"), state["class"]);
+            setSelectedValue($("character_model"), state.model);
+            $("character_level").value = state.level;
+            $("expansion_reaper").checked = state.expansions.reaper;
+            $("expansion_rise").checked = state.expansions.rise;
+            this.randomSkills();
+        }
     },
 
 };
