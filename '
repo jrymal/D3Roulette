@@ -1,5 +1,14 @@
 "use strict"
 
+Voodoo
+Gargantuan • Big Bad Voodoo • Fetish Army
+
+Passive Skills
+Jungle Fortitude • Circle of Life • Spiritual Attunement • Gruesome Feast • Blood Ritual • Bad Medicine
+Zombie Handler • Pierce the Veil • Spirit Vessel • Fetish Sycophants • Rush of Essence • Vision Quest
+Fierce Loyalty • Grave Injustice • Tribal Rites • Confidence Ritual • Creeping Death • Swampland Attunement • Midnight Feast
+
+
 const witch_doctor = {
     "name":"witch_doctor",
     "primary": [
@@ -542,82 +551,82 @@ const witch_doctor = {
         ]
     },
     "four":{
-        "name":"Voodoo",
+        "name":"Rage",
         "skills":[
             {
-                "name":"Gargantuan",
+                "name":"Earthquake",
                 "level":19,
                 "runes":[
                     {
-                        "name":"Humongoid",
-                        "level":22
+                        "name":"Giant's Stride",
+                        "level":24
                     },
                     {
-                        "name":"Restless Giant",
+                        "name":"Chilling Earth!",
                         "level":29
                     },
                     {
-                        "name":"Wrathful Protector",
+                        "name":"The Mountain's Call",
                         "level":39
                     },
                     {
-                        "name":"Big Stinker",
-                        "level":48
+                        "name":"Molten Fury",
+                        "level":50
                     },
                     {
-                        "name":"Bruiser",
+                        "name":"Cave-In",
                         "level":56
                     }
                 ],
             },
             {
-                "name":"Big Bad Voodoo",
+                "name":"Call of the Ancients",
                 "level":25,
                 "runes":[
                     {
-                        "name":"Rain Dance",
+                        "name":"The Council Rises",
                         "level":31
                     },
                     {
-                        "name":"Slam Dance",
+                        "name":"Duty to the Clan",
                         "level":37
                     },
                     {
-                        "name":"Ghost Trance",
-                        "level":44
+                        "name":"Ancients' Blessing",
+                        "level":45
                     },
                     {
-                        "name":"Jungle Drums",
-                        "level":50
+                        "name":"Ancients' Fury",
+                        "level":51
                     },
                     {
-                        "name":"Boogie Man",
+                        "name":"Together as One",
                         "level":58
                     }
                 ],
             },
             {
-                "name":"Fetish Army",
+                "name":"Wrath of the Berserker",
                 "level":30,
                 "runes":[
                     {
-                        "name":"Fetish Ambush",
-                        "level":34
+                        "name":"Arreat's Wail",
+                        "level":36
                     },
                     {
-                        "name":"Devoted Following",
+                        "name":"Insanity",
                         "level":40
                     },
                     {
-                        "name":"Legion of Daggers",
+                        "name":"Slaughter",
                         "level":46
                     },
                     {
-                        "name":"Tiki Torchers",
+                        "name":"Striding Giant",
                         "level":52
                     },
                     {
-                        "name":"Head Hunters",
+                        "name":"Thrive on Chaos",
                         "level":60
                     }
                 ],
@@ -626,79 +635,79 @@ const witch_doctor = {
     },
     "Passive Skills":[
         {
-            "name":"Jungle Fortitude",
+            "name":"Pound of Flesh",
             "level":10
         },
         {
-            "name":"Circle of Life",
+            "name":"Ruthless",
             "level":10
         },
         {
-            "name":"Spiritual Attunement",
+            "name":"Nerves of Steel",
             "level":13
         },
         {
-            "name":"Gruesome Feast",
+            "name":"Weapons Master",
             "level":16
         },
         {
-            "name":"Blood Ritual",
+            "name":"Inspiring Presence",
             "level":20
         },
         {
-            "name":"Bad Medicine",
+            "name":"Berserker Rage",
             "level":20
         },
         {
-            "name":"Zombie Handler",
+            "name":"Bloodthirst",
             "level":24
         },
         {
-            "name":"Pierce the Veil",
+            "name":"Animosity",
             "level":27
         },
         {
-            "name":"Spirit Vessel",
+            "name":"Superstition",
             "level":30
         },
         {
-            "name":"Fetish Sycophants",
+            "name":"Tough as Nails",
             "level":30
         },
         {
-            "name":"Rush of Essence",
-            "level":36
+            "name":"No Escape",
+            "level":35
         },
         {
-            "name":"Vision Quest",
+            "name":"Relentless",
             "level":40
         },
         {
-            "name":"Fierce Loyalty",
+            "name":"Brawler",
             "level":45
         },
         {
-            "name":"Grave Injustice",
+            "name":"Juggernaut",
             "level":50
         },
         {
-            "name":"Tribal Rites",
+            "name":"Unforgiving",
             "level":55
         },
         {
-            "name":"Confidence Ritual",
+            "name":"Boon of Bul-Kathos",
             "level":60
         },
         {
-            "name":"Creeping Death",
+            "name":"Earthen Might",
             "level":64
         },
         {
-            "name":"Swampland Attunement",
+            "name":"Sword and Board",
             "level":66
         },
         {
-            "name":"Midnight Feast",
+            "name":"Rampage",
             "level":68
         },
     ]

@@ -1,233 +1,598 @@
 "use strict"
 
-/*={
-Primary Skills 
-Fists of Thunder • Deadly Reach • Crippling Wave • Way of the Hundred Fists
-Secondary Skills 
-Lashing Tail Kick • Tempest Rush • Wave of Light
-Defensive Skills 
-Blinding Flash • Breath of Heaven • Serenity • Inner Sanctuary
-Techniques
-Dashing Strike • Exploding Palm • Sweeping Wind
-Focus
-Cyclone Strike • Seven-Sided Strike • Mystic Ally • Epiphany
-Mantra
-Mantra of Salvation • Mantra of Retribution • Mantra of Healing • Mantra of Conviction
-Passive Skills 
-Resolve • Fleet Footed • Exalted Soul • Transcendence • Chant of Resonance • Seize the Initiative
-The Guardian's Path • Sixth Sense • Determination • Relentless Assault • Beacon of Ytar • Alacrity
-Harmony • Combination Strike • Near Death Experience • Unity • Momentum • Mythic Rhythm
-Removed
-Guiding Light • Mantra of Evasion • One with Everything • Pacificism • Provocation
-}
-*/
-
-
 const monk= {
     "name":"monk",
     "primary": [
         {
-            "name":"Bash",
+            "name":"Fists of Thunder",
             "level":1,
             "runes":[
                 {
+                    "name":"Thunderclap",
+                    "level":6
+                },
+                {
+                    "name":"Wind Blast",
+                    "level":14
+                },
+                {
+                    "name":"Static Charge",
+                    "level":30
+                },
+                {
+                    "name":"Quickening",
+                    "level":42
+                },
+                {
+                    "name":"Bounding Light",
+                    "level":52
                 }
             ]
         },
         {
-            "name":"Cleave",
-            "level":4,
+            "name":"Deadly Reach",
+            "level":3,
             "runes":[
                 {
+                    "name":"Piercing Trident",
+                    "level":9
+                },
+                {
+                    "name":"Searing Grasp",
+                    "level":18
+                },
+                {
+                    "name":"Scattered Blows",
+                    "level":34
+                },
+                {
+                    "name":"Strike from Beyond",
+                    "level":47
+                },
+                {
+                    "name":"Foresight",
+                    "level":54
                 }
             ]
         },
         {
-            "name":"Frenzy",
+            "name":"Crippling Wave",
+            "level":11,
+            "runes":[
+                {
+                    "name":"Mangle",
+                    "level":17
+                },
+                {
+                    "name":"Concussion",
+                    "level":26
+                },
+                {
+                    "name":"Rising Tide",
+                    "level":36
+                },
+                {
+                    "name":"Tsunami",
+                    "level":51
+                },
+                {
+                    "name":"Breaking Wave",
+                    "level":57
+                }
+            ]
+        },
+        {
+            "name":"Way of the Hundred Fists",
             "level":15,
             "runes":[
                 {
-                }
-            ]
-        },
-        {
-            "name":"Weapon Throw",
-            "level":20,
-            "runes":[
+                    "name":"Hands of Lightning",
+                    "level":24
+                },
                 {
+                    "name":"Blazing Fists",
+                    "level":32
+                },
+                {
+                    "name":"Fists of Fury",
+                    "level":40
+                },
+                {
+                    "name":"Assimilation",
+                    "level":48
+                },
+                {
+                    "name":"Windforce Flurry",
+                    "level":60
                 }
             ]
         }
     ],
     "secondary":[
         {
-            "name":"Hammer of the Ancients",
-            "level": 4,
+            "name":"Lashing Tail Kick",
+            "level": 2,
             "runes":[
                 {
+                    "name":"Vulture Claw Kick",
+                    "level":7
+                },
+                {
+                    "name":"Sweeping Armada",
+                    "level":15
+                },
+                {
+                    "name":"Spinning Flame Kick",
+                    "level":28
+                },
+                {
+                    "name":"Scorpion Sting",
+                    "level":38
+                },
+                {
+                    "name":"Hand of Ytar",
+                    "level":52
                 }
             ]
         },
         {
-            "name":"Rend",
-            "level": 1,
+            "name":"Tempest Rush",
+            "level": 5,
             "runes":[
                 {
+                    "name":"Northern Breeze",
+                    "level":11
+                },
+                {
+                    "name":"Tailwind",
+                    "level":20
+                },
+                {
+                    "name":"Flurry",
+                    "level":33
+                },
+                {
+                    "name":"Electric Field",
+                    "level":45
+                },
+                {
+                    "name":"Bluster",
+                    "level":56
                 }
             ]
         },
         {
-            "name":"Seismic Slam",
-            "level":2,
+            "name":"Wave of Light",
+            "level":12,
             "runes":[
                 {
+                    "name":"Wall of Light",
+                    "level":18
+                },
+                {
+                    "name":"Explosive Light",
+                    "level":25
+                },
+                {
+                    "name":"Empowered Wave",
+                    "level":35
+                },
+                {
+                    "name":"Shattering Light",
+                    "level":49
+                },
+                {
+                    "name":"Pillar of the Ancients",
+                    "level":57
                 }
             ]
         },
-        {
-            "name":"Whirlwind",
-            "level":2,
-            "runes":[
-                {
-                }
-            ]
-        },
-        {
-            "name":"Ancient Spear",
-            "level":3,
-            "runes":[
-                {
-                }
-            ]
-        }
     ],
     "one":{
         "name":"Defensive Skills",
         "skills":[
             {
-                "name":"Ground Stomp",
-                "level":1,
+                "name":"Blinding Flash",
+                "level":4,
                 "runes":[
                     {
+                        "name":"Self Reflection",
+                        "level":12
+                    },
+                    {
+                        "name":"Mystifying Light",
+                        "level":19
+                    },
+                    {
+                        "name":"Replenishing Light",
+                        "level":28
+                    },
+                    {
+                        "name":"Crippling Light",
+                        "level":41
+                    },
+                    {
+                        "name":"Faith in the Light",
+                        "level":55
                     }
                 ],
             },
             {
-                "name":"Leap",
-                "level":1,
+                "name":"Breath of Heaven",
+                "level":8,
                 "runes":[
                     {
+                        "name":"Circle of Scorn",
+                        "level":14
+                    },
+                    {
+                        "name":"Circle of Life",
+                        "level":21
+                    },
+                    {
+                        "name":"Blazing Wrath",
+                        "level":32
+                    },
+                    {
+                        "name":"Infused with Light",
+                        "level":44
+                    },
+                    {
+                        "name":"Zephyr",
+                        "level":60
                     }
                 ],
             },
             {
-                "name":"Sprint",
-                "level":1,
+                "name":"Serenity",
+                "level":16,
                 "runes":[
                     {
+                        "name":"Peaceful Repose",
+                        "level":23
+                    },
+                    {
+                        "name":"Unwelcome Disturbance",
+                        "level":29
+                    },
+                    {
+                        "name":"Tranquility",
+                        "level":39
+                    },
+                    {
+                        "name":"Ascension",
+                        "level":47
+                    },
+                    {
+                        "name":"Instant Karma",
+                        "level":54
                     }
                 ],
             },
             {
-                "name":"Ignore Pain",
-                "level":1,
+                "name":"Inner Sanctuary",
+                "level":22,
                 "runes":[
                     {
+                        "name":"Sanctified Ground",
+                        "level":26
+                    },
+                    {
+                        "name":"Safe Haven",
+                        "level":31
+                    },
+                    {
+                        "name":"Temple of Protection",
+                        "level":37
+                    },
+                    {
+                        "name":"Intervene",
+                        "level":43
+                    },
+                    {
+                        "name":"Forbidden Palace",
+                        "level":58
                     }
                 ],
             },
         ]
     },
     "two":{
-        "name":"Might",
+        "name":"Techniques",
         "skills":[
             {
-                "name":"Overpower",
-                "level":1,
+                "name":"Dashing Strike",
+                "level":9,
                 "runes":[
                     {
+                        "name":"Way of the Falling Star",
+                        "level":15
+                    },
+                    {
+                        "name":"Blinding Speed",
+                        "level":23
+                    },
+                    {
+                        "name":"Quicksilver",
+                        "level":32
+                    },
+                    {
+                        "name":"Radiance",
+                        "level":39
+                    },
+                    {
+                        "name":"Barrage",
+                        "level":49
                     }
                 ],
             },
             {
-                "name":"Revenge",
-                "level":1,
+                "name":"Exploding Palm",
+                "level":13,
                 "runes":[
                     {
+                        "name":"The Flesh is Weak",
+                        "level":18
+                    },
+                    {
+                        "name":"Strong Spirit",
+                        "level":25
+                    },
+                    {
+                        "name":"Impending Doom",
+                        "level":36
+                    },
+                    {
+                        "name":"Shocking Grasp",
+                        "level":44
+                    },
+                    {
+                        "name":"Essence Burn",
+                        "level":51
                     }
                 ],
             },
             {
-                "name":"Furious Charge",
-                "level":1,
+                "name":"Sweeping Wind",
+                "level":21,
                 "runes":[
                     {
-                    }
-                ],
-            },
-            {
-                "name":"Avalanche",
-                "level":1,
-                "runes":[
+                        "name":"Master of Wind",
+                        "level":27
+                    },
                     {
+                        "name":"Blade Storm",
+                        "level":33
+                    },
+                    {
+                        "name":"Fire Storm",
+                        "level":38
+                    },
+                    {
+                        "name":"Inner Storm",
+                        "level":46
+                    },
+                    {
+                        "name":"Cyclone",
+                        "level":56
                     }
                 ],
             },
         ]
     },
     "three":{
-        "name":"Tactics",
+        "name":"Focus",
         "skills":[
             {
-                "name":"Threatening Shout",
-                "level":1,
+                "name":"Cyclone Strike",
+                "level":14,
                 "runes":[
                     {
+                        "name":"Eye of the Storm",
+                        "level":21
+                    },
+                    {
+                        "name":"Implosion",
+                        "level":25
+                    },
+                    {
+                        "name":"Sunburst",
+                        "level":34
+                    },
+                    {
+                        "name":"Wall of Wind",
+                        "level":41
+                    },
+                    {
+                        "name":"Soothing Breeze",
+                        "level":55
                     }
                 ],
             },
             {
-                "name":"Battle Rage",
-                "level":1,
+                "name":"Seven-Sided Strike",
+                "level":17,
                 "runes":[
                     {
+                        "name":"Sudden Assault",
+                        "level":23
+                    },
+                    {
+                        "name":"Incinerate",
+                        "level":29
+                    },
+                    {
+                        "name":"Pandemonium",
+                        "level":37
+                    },
+                    {
+                        "name":"Sustained Attack",
+                        "level":43
+                    },
+                    {
+                        "name":"Fulminating Onslaught",
+                        "level":60
                     }
                 ],
             },
             {
-                "name":"War Cry",
-                "level":1,
+                "name":"Mystic Ally",
+                "level":22,
                 "runes":[
                     {
+                        "name":"Water Ally",
+                        "level":27
+                    },
+                    {
+                        "name":"Fire Ally",
+                        "level":31
+                    },
+                    {
+                        "name":"Air Ally",
+                        "level":39
+                    },
+                    {
+                        "name":"Enduring Ally",
+                        "level":46
+                    },
+                    {
+                        "name":"Earth Ally",
+                        "level":53
+                    }
+                ],
+            },
+            {
+                "name":"Epiphany",
+                "level":61,
+                "runes":[
+                    {
+                        "name":"Desert Shroud",
+                        "level":32
+                    },
+                    {
+                        "name":"Ascendance",
+                        "level":35
+                    },
+                    {
+                        "name":"Soothing Mist",
+                        "level":41
+                    },
+                    {
+                        "name":"Insight",
+                        "level":49
+                    },
+                    {
+                        "name":"Inner Fire",
+                        "level":60
                     }
                 ],
             },
         ]
     },
     "four":{
-        "name":"Rage",
+        "name":"Mantra",
         "skills":[
             {
-                "name":"Earthquake",
-                "level":1,
+                "name":"Mantra of Salvation",
+                "level":19,
                 "runes":[
                     {
+                        "name":"Hard Target",
+                        "level":24
+                    },
+                    {
+                        "name":"Divine Protection",
+                        "level":33
+                    },
+                    {
+                        "name":"Wind through the Reeds",
+                        "level":40
+                    },
+                    {
+                        "name":"Perseverance",
+                        "level":50
+                    },
+                    {
+                        "name":"Agility",
+                        "level":58
                     }
                 ],
             },
             {
-                "name":"Call of the Ancients",
-                "level":1,
+                "name":"Mantra of Retribution",
+                "level":21,
                 "runes":[
                     {
+                        "name":"Retaliation",
+                        "level":28
+                    },
+                    {
+                        "name":"Transgression",
+                        "level":36
+                    },
+                    {
+                        "name":"Indignation",
+                        "level":41
+                    },
+                    {
+                        "name":"Against All Odds",
+                        "level":56
+                    },
+                    {
+                        "name":"Collateral Damage",
+                        "level":59
                     }
                 ],
             },
             {
-                "name":"Wrath of the Berserker",
-                "level":1,
+                "name":"Mantra of Healing",
+                "level":30,
                 "runes":[
                     {
+                        "name":"Sustenance",
+                        "level":31
+                    },
+                    {
+                        "name":"Circular Breathing",
+                        "level":38
+                    },
+                    {
+                        "name":"Boon of Inspiration",
+                        "level":42
+                    },
+                    {
+                        "name":"Heavenly Body",
+                        "level":48
+                    },
+                    {
+                        "name":"Time of Need",
+                        "level":53
+                    }
+                ],
+            },
+            {
+                "name":"Mantra of Conviction",
+                "level":30,
+                "runes":[
+                    {
+                        "name":"Overawe",
+                        "level":35
+                    },
+                    {
+                        "name":"Intimidation",
+                        "level":44
+                    },
+                    {
+                        "name":"Dishearten",
+                        "level":47
+                    },
+                    {
+                        "name":"Annihilation",
+                        "level":55
+                    },
+                    {
+                        "name":"Submission",
+                        "level":60
                     }
                 ],
             },
@@ -235,80 +600,76 @@ const monk= {
     },
     "Passive Skills":[
         {
-            "name":"Pound of Flesh",
+            "name":"Resolve",
             "level":10
         },
         {
-            "name":"Ruthless",
+            "name":"Fleet Footed",
             "level":10
         },
         {
-            "name":"Nerves of Steel",
+            "name":"Exalted Soul",
             "level":13
         },
         {
-            "name":"Weapons Master",
-            "level":15
-        },
-        {
-            "name":"Inspiring Presence",
+            "name":"Transcendence",
             "level":16
         },
         {
-            "name":"Berserker Rage",
-            "level":18
-        },
-        {
-            "name":"Bloodthirst",
+            "name":"Chant of Resonance",
             "level":20
         },
         {
-            "name":"Animosity",
-            "level":22
-        },
-        {
-            "name":"Superstition",
-            "level":24
-        },
-        {
-            "name":"Tough as Nails",
-            "level":26
-        },
-        {
-            "name":"No Escape",
-            "level":10
-        },
-        {
-            "name":"Relentless",
-            "level":10
-        },
-        {
-            "name":"Brawler",
-            "level":13
-        },
-        {
-            "name":"Juggernaut",
-            "level":15
-        },
-        {
-            "name":"Unforgiving",
-            "level":16
-        },
-        {
-            "name":"Boon of Bul-Kathos",
-            "level":18
-        },
-        {
-            "name":"Earthen Might",
+            "name":"Seize the Initiative",
             "level":20
         },
         {
-            "name":"Sword and Board",
-            "level":22
+            "name":"The Guardian's Path",
+            "level":24
         },
         {
-            "name":"Rampage",
-            "level":24
+            "name":"Sixth Sense",
+            "level":27
+        },
+        {
+            "name":"Determination",
+            "level":30
+        },
+        {
+            "name":"Relentless Assault",
+            "level":30
+        },
+        {
+            "name":"Beacon of Ytar",
+            "level":35
+        },
+        {
+            "name":"Alacrity",
+            "level":40
+        },
+        {
+            "name":"Harmony",
+            "level":45
+        },
+        {
+            "name":"Combination Strike",
+            "level":50
+        },
+        {
+            "name":"Near Death Experience",
+            "level":58
+        },
+        {
+            "name":"Unity",
+            "level":64
+        },
+        {
+            "name":"Momentum",
+            "level":66
+        },
+        {
+            "name":"Mythic Rhythm",
+            "level":68
         },
     ]
 };
