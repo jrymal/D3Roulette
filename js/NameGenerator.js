@@ -60,7 +60,6 @@ const NAME_GENERATOR = {
             "The ${color} ${noun}",
             "The ${noun} of ${location}",
             "The ${noun} from ${location}",
-            "The ${location} ${noun}",
         ];
 
         return this;
