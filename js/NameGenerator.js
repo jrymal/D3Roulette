@@ -1,8 +1,10 @@
 "use strict";
 
+
 const NAME_GENERATOR = {
 
     init: function(){
+        this.MAX_LENGTH = 12;
         // init stand dictionaries
         this.STD_DICT = {
             "noun":[
@@ -58,14 +60,31 @@ const NAME_GENERATOR = {
             "The ${noun}",
             "The ${noun} ${noun}",
             "The ${color} ${noun}",
-            "The ${noun} of ${location}",
-            "The ${noun} from ${location}",
         ];
 
         return this;
     },
-
+    
     generate: function(dict, str_class_model){
+        var format = this.formattedPhrase(this.generateSpacedPhrase(dict, str_class_model));
+
+        while (format.length > this.MAX_LENGTH){
+            format = this.formattedPhrase(this.generateSpacedPhrase(dict, str_class_model));
+        }
+
+        return format
+    },
+
+    formattedPhrase : function(str_phrase){
+        return str_phrase.split(' ').map(wrd => this.capitalize(wrd)).join('');
+    },
+    
+    capitalize : function(word){
+        return word.charAt(0).toUpperCase() + word.slice(1)
+    },
+
+
+    generateSpacedPhrase: function(dict, str_class_model){
         var template = chooseFromList(this.TEMPLATE);
         var result = "";
         var stemp = template.split("${");
